@@ -22,3 +22,13 @@ async def sync_user_activity(username: str):
     events = await handle_sync_user_activity(command)
 
     return events
+
+
+# @router.post("/users/{username}/sync")
+# async def sync_user_activity(
+#     username: str,
+#     client: httpx.AsyncClient = Depends(get_http_client),
+# ):
+#     command = SyncUserActivityCommand(username=username)
+#     events = await handle_sync_user_activity(command, client)
+#     return events
