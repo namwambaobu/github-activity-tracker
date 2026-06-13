@@ -1,8 +1,8 @@
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import DateTime, String, Integer, func
 from sqlalchemy.dialects.postgresql import JSONB
 from datetime import datetime
-from src.database.base import Base  # ← correct import direction
+from src.database.base import Base
 
 
 
